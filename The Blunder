@@ -1,0 +1,15 @@
+/*
+The REPLACE() function replaces all occurrences of a substring within a string, with a new substring.
+Note: This function performs a case-sensitive replacement.
+syntax:
+REPLACE(string, from_string, new_string)
+
+The CEIL() function returns the smallest integer value that is bigger than or equal to a number.
+Syntax:
+CEIL(number)
+
+*/
+
+
+SELECT CEIL(AVG(Salary)-AVG(REPLACE(Salary,'0',''))) 
+FROM EMPLOYEES;
